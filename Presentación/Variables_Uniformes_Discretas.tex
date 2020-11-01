@@ -42,12 +42,86 @@ f_{X} (x)=\begin{cases}
 {\dfrac{1}{n}} & si \mbox{ $x=x_{1},...,x_{n}$}\\{0 }& \mbox{otro caso}\
 \end{cases}
 $$
+La gráfica de la función de probabilidad de la distribución uniforme en el conjunto (1,2,3,4,5) aparece en la figura siguiente, junto con la correspondiente función de distribución. Cada salto en la función de distribución es de tamaño $\dfrac{1}{5}$. La expresión completa de $F_{X}(x)$ es la siguiente:
+$$
+F_{X} (x)=\begin{cases}
+\ {0} &  \mbox{ $x<1$}\\ {0.20} &  \mbox{ $1\leq x<2$}\\ {0.40} &  \mbox{ $2\leq x<3$}\\ {0.60} &  \mbox{ $3\leq x<4$}\\ {0.80} &  \mbox{ $4\leq x<5$}\\ {1} &  \mbox{$ x\geq 5$}\
+\end{cases}
+$$
+\begin{center}
+\includegraphics[scale=0.3]{grafica2.jpg}
+\end{center}
+\begin{center}
+\includegraphics[scale=0.3]{grafica1.jpg}
+\end{center}
 \section*{Calcular la esperanza matemática}
 La esperanza de esta distribución puede ser obtenida como una media aritmética de los valores que toma la variable $\lbrace  x_{1},x_{2},...,x_{n} \rbrace$.
 $$E(x)=\sum_{i=1}^{n}x_{i}f_X(x_{i})=\dfrac{1}{n}\sum_{i=1}^{n}x_{i}=\mu$$
-\section*{Calcular la varianza}
-La varianza se obtiene de la forma ya conocida; es decir, como la varianza de esos mismos valores.Expresada en términos de momentos, la varianza será:
-$$Var(x)=\dfrac{1}{n}\sum_{i=1}^{n}(x_{i}-\mu)^{2}= \sigma ^{2}$$
-\section*{Ejercicios propuestos}
+De la misma manera si X es una variable aleatoria  con distribución uniforme discreta en el conjunto $\lbrace 1,...,n \rbrace$. La esperanza cuenta con las siguientes propiedades:\\
+A) $E(X) = \dfrac{n + 1}{2}$\\
+B) $E(X^2) = \dfrac{(n + 1)(2n + 1)}{6}$
+\subsection*{Demostración de la propiedad a)}
+Sabemos que:
+$$E(x)=\dfrac{1}{n}\sum_{i=1}^{n}x_{i}$$
+Conocemos por información previa que la sumatoria de $\lbrace 1,...,n \rbrace$ puede ser vista como $\dfrac{n(n+1)}{2}$. \\
+Así que: 
+$$E(X)= \dfrac{1}{n}\sum_{i=1}^{n}x_{i} = \dfrac{1}{n} \cdot \dfrac{n(n+1)}{2} = \dfrac{n + 1}{2}$$
+\subsection*{Demostración de la propiedad b)}
+Sabemos que:
+$$E(x)=\dfrac{1}{n}\sum_{i=1}^{n}x_{i}$$
+Conocemos por información previa que la sumatoria de los cuadrados de $\lbrace 1,...,n \rbrace$ puede ser vista como $\dfrac{n(n+1)(2n+1)}{6}$.\\
+Así que:
+$$E(X^2)= \dfrac{1}{n}\sum_{i=1}^{n}x^2_{i} = \dfrac{1}{n} \cdot \dfrac{n(n+1)(2n+1)}{6}  = \dfrac{(n + 1)(2n + 1)}{6}$$
 
+
+\section*{Calcular la varianza}
+La varianza se obtiene de la forma ya conocida; es decir, como la varianza de esos mismos valores. Expresada en términos de momentos, la varianza será:
+$$Var(X)=\dfrac{1}{n}\sum_{i=1}^{n}(x_{i}-\mu)^{2}= \dfrac{1}{n}\sum_{i=1}^{n}(x_{i})^2 - (\mu)^{2} =\sigma ^{2}$$
+De igual forma si X es una variable aleatoria  con distribución uniforme discreta en el conjunto $\lbrace 1,...,n \rbrace$. La varianza se puede resumir a:
+$$Var(X) = \dfrac{n^{2} + 1}{12}$$
+\subsection*{Demostración}
+Sabemos que:
+$$Var(X)= \dfrac{1}{n}\sum_{i=1}^{n}(x_{i})^2 -(\mu)^{2}$$
+Recordando un poco de la ley distributiva de la sumatoria, esto se podría ver cómo:
+$$Var(X) =  \dfrac{1}{n}\sum_{i=1}^{n}(x_{i})^2 - \dfrac{1}{n}\sum_{i=1}^{n}(\mu)^{2}$$
+Y estose puede ver de la siguiente manera:
+$$Var(X) =E(X^2) - E^2(X)$$
+
+Por demostraciones anteriores que realizamos en subtemas atrás, sabemos que:
+$$Var(X) = E(X^2) - E^2(X)= \dfrac{(n + 1)(2n + 1)}{6} - \dfrac{(n +1)^2}{4}$$
+$$=\dfrac{8n^2 + 12n + 1 - 6n^2 - 12n - 6}{24}$$
+$$= \dfrac{2n^2 - 2}{24}$$
+$$= \dfrac{n^2 - 1}{12}$$
+\section*{Ejercicios propuestos}
+\begin{center}
+Supongamos que se lanza una vez un dado. Si el dado está equilibrado:
+\end{center}
+a) Defina la función masa de probabilidad.\\
+b) Calcule la esperanza.
+\subsection*{Solución a)}
+Observemos que X es discreta pues $R_{X}= \lbrace 1, 2, 3, 4, 5, 6 \rbrace$. Luego las posibilidades son:
+
+$$f_{X}(1)=P(x=1)=\dfrac{1}{6}$$
+$$f_{X}(2)=P(x=2)=\dfrac{1}{6}$$$$f_{X}(3)=P(x=3)=\dfrac{1}{6}$$
+$$f_{X}(4)=P(x=4)=\dfrac{1}{6}$$
+$$f_{X}(5)=P(x=5)=\dfrac{1}{6}$$
+$$f_{X}(6)=P(x=6)=\dfrac{1}{6}$$
+ En conclusion:
+
+$$
+f_{X} (x)=\begin{cases}
+{\dfrac{1}{6}} &\mbox{ $x=1$}\\ 
+\\ {\dfrac{1}{6}} &\mbox{$x=2$}\\ 
+\\{\dfrac{1}{6}} &\mbox{ $x=3$}\\ 
+\\{\dfrac{1}{6}} &\mbox{ $x=4$}\\ 
+\\{\dfrac{1}{6}} &\mbox{ $x=5$}\\
+\\{\dfrac{1}{6}} &\mbox{$ x=6$}
+\end{cases}
+$$
+\subsection*{Solución b)}
+Como la variable aleatoria X tiene distribución uniforme discreta, por defición tenemos que:
+
+$$E(x)=\dfrac{1}{n}\sum_{i=1}^{n}x_{i}$$
+$$=\dfrac{1}{6}\sum_{i=1}^{6}x_{i}=\dfrac{1}{6}(1+2+3+4+5+6)$$
+$$=3.5$$
 \end{document}
