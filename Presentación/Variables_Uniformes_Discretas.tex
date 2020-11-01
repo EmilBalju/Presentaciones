@@ -1,0 +1,53 @@
+\documentclass[12pt,spanish]{homework}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+%\usepackage{mathpazo}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{listings}
+\usepackage{enumerate} 
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[spanish,mexico]{babel}
+\inputencoding{latin1}
+
+\title{Variables Uniformes Discretas}
+\author{Emilio Balan,Amilcar Campos, Elian Carrasco, Citlali Gutiérrez, Héctor Rodríguez}
+\date{4 de noviembre del 2020}
+\institute{Universidad Autónoma de Yucatán \\ Facultad de Matemáticas - UADY}
+\class{Probabilidad 1 (Grupo B)}
+\professor{Lic. Ernesto Guerrero Lara}
+
+\begin{document}
+
+\maketitle
+
+\section*{Experimento que origina a la variable uniforme discreta}
+Es la distribución de probabilidad se asocia a variables cuyos posibles valores tienen todos la misma probabilidad. Si una variable aleatoria X cuyos posibles valores son $({x_{1}, . . . ,x_{n}})$  
+tiene distribución uniforme discreta entonces
+$$
+P(X=x_{1})=P(X=x_{2})=...=P(X=x_{n})={\dfrac{1}{n}}
+$$
+Decimos que una variable aleatoria X tiene una distribución uniforme discreta sobre el conjunto de n números $\lbrace x_{1}, . . . , x_{n} \rbrace$ si la probabilidad de que
+X tome cualquiera de estos valores es constante $\dfrac{1}{n}$. Esta distribución surge
+en espacios de probabilidad equiprobables, esto es, en situaciones en donde
+tenemos n resultados diferentes y todos ellos tienen la misma probabilidad
+de ocurrir.
+Los juegos de lotería son un ejemplo donde puede aplicarse esta distribuci´on de probabilidad.
+Se denota cómo $X \sim$ unif$\lbrace x_{1}, . . ., x_{n} \rbrace$, en donde el símbolo $\sim$ se lee "se distribuye como" o "tiene una distribución". 
+\section*{Función masa de probabilidad de la variable}
+La función de probabilidad de esta variable aleatoria es:
+$$
+f_{X} (x)=\begin{cases}
+{\dfrac{1}{n}} & si \mbox{ $x=x_{1},...,x_{n}$}\\{0 }& \mbox{otro caso}\
+\end{cases}
+$$
+\section*{Calcular la esperanza matemática}
+La esperanza de esta distribución puede ser obtenida como una media aritmética de los valores que toma la variable $\lbrace  x_{1},x_{2},...,x_{n} \rbrace$.
+$$E(x)=\sum_{i=1}^{n}x_{i}f_X(x_{i})=\dfrac{1}{n}\sum_{i=1}^{n}x_{i}=\mu$$
+\section*{Calcular la varianza}
+La varianza se obtiene de la forma ya conocida; es decir, como la varianza de esos mismos valores.Expresada en términos de momentos, la varianza será:
+$$Var(x)=\dfrac{1}{n}\sum_{i=1}^{n}(x_{i}-\mu)^{2}= \sigma ^{2}$$
+\section*{Ejercicios propuestos}
+
+\end{document}
