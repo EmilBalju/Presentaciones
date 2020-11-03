@@ -60,16 +60,11 @@ Resuelve problemas que involucran el cálculo de probabilidades, utilizando la v
 \end{center}
 \end{frame}
 
-\begin{frame}{Experimento que origina a la variable uniforme discreta}
-Es la distribución de probabilidad se asocia a variables cuyos posibles valores tienen todos la misma probabilidad. Si una variable aleatoria X cuyos posibles valores son $({x_{1}, . . . ,x_{n}})$  
-tiene distribución uniforme discreta entonces
+\begin{frame}{Experimento que origina a la variable uniforme discreta II}
+Decimos que una variable aleatoria X tiene una distribución uniforme discreta sobre el conjunto de n números $\lbrace x_{1},...,x_{n} \rbrace$ si la probabilidad de que X tome cualquiera de estos valores es constante $\dfrac{1}{n}$, entonces: 
 $$
 P(X=x_{1})=P(X=x_{2})=...=P(X=x_{n})={\dfrac{1}{n}}
 $$
-\end{frame} 
-
-\begin{frame}{Experimento que origina a la variable uniforme discreta II}
-Decimos que una variable aleatoria X tiene una distribución uniforme discreta sobre el conjunto de n números $\lbrace x_{1},...,x_{n} \rbrace$ si la probabilidad de que X tome cualquiera de estos valores es constante $\dfrac{1}{n}$ . \\
 Esta distribucion surge en espacios de probabilidad equiprobables, esto es, en situaciones en donde tenemos n resultados diferentes y todos ellos tienen la misma probabilidad de ocurrir. 
 
 Los juegos de lotería son un ejemplo donde puede aplicarse esta distribucion de probabilidad. 
@@ -78,7 +73,7 @@ Los juegos de lotería son un ejemplo donde puede aplicarse esta distribucion de
 \begin{frame}{Experimento que origina a la variable uniforme discreta III}
 Se escribe:
 $$X \sim unif(x_{1},...,x_{n})$$
-En donde el simbolo $"\sim"$ se lee “se distribuye como” o “tiene una distribución”. La función de probabilidad de esta variable aleatoria es.
+En donde el simbolo $"\sim"$ se lee “se distribuye como” o “tiene una distribución”. 
 \end{frame}
 
 \begin{frame}{Función masa de probabilidad de la variable uniforme discreta}
@@ -92,9 +87,10 @@ $$
 \begin{frame}{Función masa de probabilidad de la variable uniforme discreta II}
 \textbf{Ejemplo}
 La gráfica de la función de probabilidad de la distribución
-uniforme en el conjunto (1,2,3,4,5) aparece en la figura siguiente, junto con la correspondiente función de distribución. Cada salto en la función de distribución es de tamaño $\dfrac{1}{5}$. La expresión completa de F(x) es la siguiente:
+uniforme en el conjunto (1,2,3,4,5) aparece en la figura siguiente, junto con la correspondiente función de distribución. Cada salto en la función de distribución es de tamaño $\dfrac{1}{5}$. 
 \end{frame}
 \begin{frame}{Función masa de probabilidad de la variable uniforme discreta III}
+La expresión completa de $F_{X}(x)$ es la siguiente:
 $$
 F_{X} (x)=\begin{cases}
 \ {0} &  \mbox{ $x<1$}\\ {0.20} &  \mbox{ $1\leq x<2$}\\ {0.40} &  \mbox{ $2\leq x<3$}\\ {0.60} &  \mbox{ $3\leq x<4$}\\ {0.80} &  \mbox{ $4\leq x<5$}\\ {1} &  \mbox{$ x\geq 5$}\
@@ -129,7 +125,7 @@ b) $E(X^2) = \dfrac{(n + 1)(2n + 1)}{6}$
 
 \begin{frame}{Demostración de la propiedad a)}
 Sabemos que:
-$$E(x)=\dfrac{1}{n}\sum_{i=1}^{n}x_{i}$$
+$$E(X)=\dfrac{1}{n}\sum_{i=1}^{n}x_{i}$$
 Conocemos por información previa que la sumatoria de $\lbrace 1,...,n \rbrace$ puede ser vista como $\dfrac{n(n+1)}{2}$. \\
 Así que: 
 $$E(X)= \dfrac{1}{n}\sum_{i=1}^{n}x_{i} = \dfrac{1}{n} \cdot \dfrac{n(n+1)}{2} = \dfrac{n + 1}{2}$$
@@ -137,7 +133,7 @@ $$E(X)= \dfrac{1}{n}\sum_{i=1}^{n}x_{i} = \dfrac{1}{n} \cdot \dfrac{n(n+1)}{2} =
 
 \begin{frame}{Demostración de la propiedad b)}
 Sabemos que:
-$$E(x)=\dfrac{1}{n}\sum_{i=1}^{n}x_{i}$$
+$$E(X)=\dfrac{1}{n}\sum_{i=1}^{n}x_{i}$$
 Conocemos por información previa que la sumatoria de los cuadrados de $\lbrace 1,...,n \rbrace$ puede ser vista como $\dfrac{n(n+1)(2n+1)}{6}$.\\
 Así que:
 $$E(X^2)= \dfrac{1}{n}\sum_{i=1}^{n}x^2_{i} = \dfrac{1}{n} \cdot \dfrac{n(n+1)(2n+1)}{6}  = \dfrac{(n + 1)(2n + 1)}{6}$$
@@ -145,7 +141,11 @@ $$E(X^2)= \dfrac{1}{n}\sum_{i=1}^{n}x^2_{i} = \dfrac{1}{n} \cdot \dfrac{n(n+1)(2
 
 \begin{frame}{Calcular la varianza}
 La varianza se obtiene de la forma ya conocida; es decir, como la varianza de esos mismos valores. Expresada en términos de momentos, la varianza será:
-$$Var(X)=\dfrac{1}{n}\sum_{i=1}^{n}(x_{i}-\mu)^{2}= \dfrac{1}{n}\sum_{i=1}^{n}(x_{i})^2 - (\mu)^{2} =\sigma ^{2}$$
+$$Var(X)=\dfrac{1}{n}\sum_{i=1}^{n}(x_{i}-\mu)^{2}=\sigma ^{2}$$
+Además 
+$$Var(X) = \dfrac{1}{n}\sum_{i=1}^{n}(x_{i})^2 - (\mu)^{2} $$
+Recordemos que:
+$$Var(X) = E(X^{2}) - E^{2}(X) = \frac{1}{n}\sum_{i=1}^{n} (x_i)^{2}- E^{2}(x) =  \frac{1}{n}\sum_{i=1}^{n} (x_i)^{2} - (\mu)^{2}$$
 \end{frame} 
 
 \begin{frame}\frametitle{Propiedades de la varianza}
@@ -156,17 +156,10 @@ $$Var(X) = \dfrac{n^{2} - 1}{12}$$
 \end{frame}
 
 \begin{frame}{Demostración}
-Sabemos que:
-$$Var(X)= \dfrac{1}{n}\sum_{i=1}^{n}(x_{i})^2 -(\mu)^{2}$$
-Recordando un poco de la ley distributiva de la sumatoria, esto se podría ver cómo:
-$$Var(X) =  \dfrac{1}{n}\sum_{i=1}^{n}(x_{i})^2 - \dfrac{1}{n}\sum_{i=1}^{n}(\mu)^{2}$$
-Y estose puede ver de la siguiente manera:
-$$Var(X) =E(X^2) - E^2(X)$$
-\end{frame}
-
-\begin{frame}{Continuación de la demostración}
-Por demostraciones anteriores que realizamos en subtemas atrás, sabemos que:
-$$Var(X) = E(X^2) - E^2(X)= \dfrac{(n + 1)(2n + 1)}{6} - \dfrac{(n +1)^2}{4}$$
+Por información previa sabemos que:
+$$Var(X) = E(X^2) - E^2(X)$$
+Y por las propiedades de la esperanza, sabemos que esto es igual a:
+$$= \dfrac{(n + 1)(2n + 1)}{6} - \dfrac{(n +1)^2}{4}$$
 $$=\dfrac{8n^2 + 12n + 1 - 6n^2 - 12n - 6}{24}$$
 $$= \dfrac{2n^2 - 2}{24}$$
 $$= \dfrac{n^2 - 1}{12}$$
@@ -184,78 +177,81 @@ c) Calcula la varianza.
 
 \begin{frame}{Solución de a)}
 Observemos que X es discreta puesto que $R_{X}=\lbrace 1, 2, 3, 4, 5, 6 \rbrace$. Luego las posibilidades son:
-$$f_{X}(1)=P(x=1)=\dfrac{1}{6}$$
-$$f_{X}(2)=P(x=2)=\dfrac{1}{6}$$$$f_{X}(3)=P(x=3)=\dfrac{1}{6}$$
-$$f_{X}(4)=P(x=4)=\dfrac{1}{6}$$
-$$f_{X}(5)=P(x=5)=\dfrac{1}{6}$$
-$$f_{X}(6)=P(x=6)=\dfrac{1}{6}$$
+$$f_{X}(1)=P(X=1)=\dfrac{1}{6}$$
+$$f_{X}(2)=P(X=2)=\dfrac{1}{6}$$
+$$f_{X}(3)=P(X=3)=\dfrac{1}{6}$$
+$$f_{X}(4)=P(X=4)=\dfrac{1}{6}$$
+$$f_{X}(5)=P(X=5)=\dfrac{1}{6}$$
+$$f_{X}(6)=P(X=6)=\dfrac{1}{6}$$
 \end{frame}
 
 \begin{frame} {Solución de a) II}
 En conclusion:
 $$
-f_{X} (x)=\begin{cases}
+P(X = x)=\begin{cases}
 {\dfrac{1}{6}} & si \mbox{ $x= 1,2 ,3, 4, 5, 6$}\\{0 }& \mbox{otro caso}\
 \end{cases}
 $$
 \end{frame}
 
 \begin{frame}{Solución de b)}
-Como la variable aleatoria X tiene distribucion uniforme discreta, por deficion tenemos que:
+Como la variable aleatoria X tiene distribución uniforme discreta en el conjunto $\lbrace 1,2,3,4,5,6 \rbrace$, por propiedades de la esperanza sabemos que esto es igual a:
 
-        $$E(x)=\dfrac{1}{n}\sum_{i=1}^{n}x_{i}$$
-        $$=\dfrac{1}{6}\sum_{i=1}^{6}x_{i}=\dfrac{1}{6}(1+2+3+4+5+6)$$
-        $$=3.5$$
-(\textbf{Nota:} Igual se pudo realizar con las propiedades de la esperanza matemática y nos daría el mismo resultado.)
+$$E(X)= \dfrac{n + 1}{2} $$
+En este caso nuestra $n = 6$, así que:
+$$E(X)= \dfrac{6 + 1}{2} $$
+$$=3.5$$
 \end{frame}
 \begin{frame}{Solución de c)}
-Como la variable aleatoria X tiene distribucion uniforme discreta, por deficion tenemos que:
+Como la variable aleatoria X tiene distribucion uniforme discreta en el conjunto $\lbrace 1,2,3,4,5,6 \rbrace$, por la propiedad de la varianza sabemos que esto es igual a:
 
-        $$Var(x)=\dfrac{1}{n}\sum_{i=1}^{n}(x_{i}-\mu)^{2}$$
-        $$=\dfrac{1}{6}\sum_{i=1}^{6}(x_{i}-3.5)^{2}$$
-        $$=\dfrac{35}{12}$$
-(\textbf{Nota:} Igual se pudo realizar con la propiedad de la varianza y nos daría el mismo resultado.)
+$$Var(X) = \dfrac{n^{2} - 1}{12}$$
+En nuestro caso $n=6$, así que:
+$$Var(X) = \dfrac{36 - 1}{12}$$
+$$=\dfrac{35}{12}$$
 \end{frame} 
 
-\begin{frame}{Ejercicio 2}
-En la fabricación de un cierto producto se produce con fallas, suponiendo que el numero de fallas sigue la siguiente distribucion uniforme:
-$$
-f_{X} (x)=\begin{cases}
-\ {\dfrac{1}{5}} &\mbox{ $x=1,2,3,4,5$}\\ {0} &\mbox{otro caso}\
-\end{cases}
-$$
-Determine la probabilidad de que en cierto producto se encuentren: 
-
-a) 2 fallas.
-
-b) 3 fallas.
-
-c)Mas de 3 fallas.
-
-\end{frame} 
- 
-\begin{frame}{Solucion a)}
-Esto lo podemos ver como:
-
-$$P(x=2)=f(2)=\frac{1}{5}$$
-
-\end{frame} 
-
-\begin{frame}{Solucion b)}
-Esto lo podemos ver como:
-
-$$P(x=3)=f(3)=\frac{1}{5}$$
-
-
-\end{frame} 
-
-\begin{frame}{Solucion c)}
-Esto lo podemos ver como:
-
-$$P(x>3)=f(4)+f(5)+f(6)+...+f(n)=\frac{1}{5}+\frac{1}{5}+0+...+0$$
-$$=\frac{2}{5}$$
-
-
-\end{frame}  
- 
+ \begin{frame}{Ejercicio 2}
+En un juego de Monopoly con sólo un dado, Emilio está en una zona de alto peligro y
+no tiene dinero; las primeras 3 casillas están llenas de hoteles, la cuarta es la salida y la
+quinta y la sexta también están llenas de hoteles. 
+\begin{block}{Calcula lo siguiente:}
+a) La probabilidad de que quiebre.\\
+b) Si ahora la casilla 1 y 5 quitaron sus hoteles y están hipotecadas, calcula la nueva
+probabilidad de que Emilio quiebre.\\
+c) Asigna el número promedio de la casilla en la que caería Emilio si hiciera muchas veces
+ese mismo tiro en la misma situación dada.\\
+d) Asigna un número que cuantifique el grado de dispersión de los los valores que pueden
+tomar las casillas alrededor del número obtenido en el inciso c.
+\end{block}
+ \end{frame}
+ \begin{frame}{Solución a)}
+ La probabilidad de que quiebre es equivalente a:
+$1  - P(X = 4)$ ya que están pidiendo la probabilidad de que quiebre, es decir, el complemento
+de la proobabilidad de que no quiebre, es decir que caiga en la casilla 4.
+Luego:
+$$1 - P(X = 4) = 1 - \dfrac{1}{6} = \dfrac{5}{6}$$
+\end{frame}
+\begin{frame}{Solución b)}
+La probabilidad de que quiebre es equivalente a:
+$$P(X = 2) + P(X = 3) + P(X = 6)$$
+Ya que es la suma de todas las probabilidades de
+que caiga en una casilla donde quiebra, Nótese que en este ejemplo, es necesario evaluar
+los saltos individualmente y no se puede hacer de otro modo. Luego la probabilidad está
+dada por: 
+$$\dfrac{1}{6} + \dfrac{1}{6} + \dfrac{1}{6} = \dfrac{3}{6} = \dfrac{1}{2}$$ 
+\end{frame}
+\begin{frame}{Solución c)}
+SSimplemente están pidiendo la esperanza de la variable aleatoria, análogo al ejemplo 1. 
+$$E(X)=\dfrac{n + 1}{2}$$
+$$=\dfrac{7}{2}$$
+$$=3.5$$
+Luego su valor es 3.5
+\end{frame}
+\begin{frame}{Solución d)}
+En este inciso, están pidiendo la varianza de la variable aleatoria, la cual está dada por:
+ $$Var(X)=\dfrac{n^{2}-1}{12}$$
+$$= \dfrac{36 - 1}{2}$$
+$$=\dfrac{35}{12}$$
+ \end{frame}
 \end{document}
